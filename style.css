@@ -1,0 +1,190 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 450px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 5px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: #45a049;
+}
+
+.btn-voltar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  background: #777;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.btn-voltar:hover {
+  background: #555;
+}
+
+.btn_add {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background: #45a049;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn_add:hover {
+  background: #45a049;
+}
+.btn_edit {
+  padding: 6px 12px;
+  background: #ffc107;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.btn_edit:hover {
+  background: #e0a800;
+}
+
+.btn_delete {
+  padding: 6px 12px;
+  background: #f44336;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn_delete:hover {
+  background: #d32f2f;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th {
+  background: #4caf50;
+  color: white;
+  padding: 12px;
+}
+th a {
+  color: white;
+  text-decoration: none;
+}
+
+th a:hover {
+  text-decoration: underline;
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+table tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+table tr:hover {
+  background: #e6f7ff;
+}
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .btn,
+  .btn-voltar,
+  .btn_add,
+  .btn_edit,
+  .btn_delete {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  h1,
+  h2 {
+    font-size: 22px;
+  }
+}
